@@ -78,19 +78,33 @@
             <tab/>
             <ITEXT CH="Features"/>
             <para PARENT="notes"/>
-            <ITEXT CH="MBR"/>
-            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <tab CPARENT="p.code"/>
             <ITEXT CH="1980"/>
             <tab/>
-            <ITEXT CH="Legacy, 2 Terabytes max."/>
-            <para/>
-            <ITEXT CH="GPT"/>
-            <tab/>
+            <ITEXT CH="Legacy BIOS, 2 Terabytes max."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="GPT"/>
+            <tab CPARENT="p.code"/>
             <ITEXT CH="2000"/>
             <tab/>
-            <ITEXT CH="Globally  Unique  Identifier  (GUID)   "/>
+            <ITEXT CH="Up to 128 partitions, UEFI standard"/>
             <para/>
-            <ITEXT CH="Partition types"/>
+            <ITEXT CH="MBR Partition types"/>
+            <para PARENT="h2"/>
+            <ITEXT CPARENT="p.code" CH="primary"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="4 primary partitions at maximum"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="extended"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="A primary partition containing logical partitions"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="logical"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Any number once an extended partition is created"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="MBR Partition types"/>
             <para PARENT="h2"/>
             <ITEXT CH="Name"/>
             <tab/>
@@ -102,404 +116,708 @@
             <tab/>
             <ITEXT CPARENT="p.code" CH="05/0F"/>
             <tab CPARENT="p.code"/>
-            <ITEXT CH="For MBR, Logical partitions container"/>
+            <ITEXT CPARENT="notes" CH="For MBR, Logical partitions container"/>
             <para/>
             <ITEXT CH="Swap"/>
             <tab/>
             <ITEXT CPARENT="p.code" CH="82"/>
             <tab CPARENT="p.code"/>
-            <ITEXT CH="System usable only"/>
+            <ITEXT CPARENT="notes" CH="Dedicated for Linux system use"/>
             <para/>
             <ITEXT CH="Native"/>
             <tab/>
             <ITEXT CPARENT="p.code" CH="83"/>
             <tab CPARENT="p.code"/>
-            <ITEXT CH="System / User filesystems"/>
+            <ITEXT CPARENT="notes" CH="Linux System &amp; User filesystems"/>
             <para/>
             <ITEXT CH="RAID"/>
             <tab/>
             <ITEXT CPARENT="p.code" CH="fd"/>
             <tab CPARENT="p.code"/>
-            <ITEXT CH="Automount raid devices"/>
+            <ITEXT CPARENT="notes" CH="Automount raid devices"/>
             <para/>
-            <ITEXT CH="Filesystems types"/>
+            <ITEXT CH="Linux GPT Partition types"/>
             <para PARENT="h2"/>
-            <ITEXT CH="Btrfs"/>
+            <ITEXT CH="Linux FS data"/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="New generation, featureful"/>
-            <para/>
-            <ITEXT CH="Crypt"/>
+            <ITEXT CPARENT="p.code" CH="0FC63DAF-8483-4772-8E79-3D69D8477DE4"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="RAID partition "/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="Luks encrypted partition"/>
-            <para/>
-            <ITEXT CH="Fat16|32"/>
+            <ITEXT CPARENT="p.code" CH="A19D880F-05FC-4D3B-A006-743F0F84911E"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Swap partition "/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy MS FS"/>
-            <para/>
-            <ITEXT CH="Ext2"/>
+            <ITEXT CPARENT="p.code" CH="0657FD6D-A4AB-43C4-84E5-0933C84B4F4F"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="LVM partition "/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy Linux filesystem"/>
-            <para/>
-            <ITEXT CH="Ext3"/>
+            <ITEXT CPARENT="p.code" CH="E6D6D379-F507-44C2-A23C-238F2A3DF928"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="/home partition "/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="ext2 extension: journaling"/>
-            <para/>
-            <ITEXT CH="Ext4"/>
+            <ITEXT CPARENT="p.code" CH="933AC7E1-2EB4-4F13-B844-0E14E2AEF915"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Reserved"/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="ext3 extension: 16TB files, 1EB volumes"/>
-            <para/>
-            <ITEXT CH="HFS|+"/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy Apple File System"/>
-            <para/>
-            <ITEXT CH="JFS"/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy IBM FS"/>
-            <ITEXT CH=" "/>
-            <para/>
-            <ITEXT CH="NTFS"/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy MS FS"/>
-            <para/>
-            <ITEXT CH="ReiserFS"/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Legacy with journaling "/>
-            <para/>
-            <ITEXT CH="XFS"/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Journaling, RAID optimizations"/>
-            <trail/>
+            <ITEXT CPARENT="p.code" CH="8DA63339-0007-60C0-C436-083AC8230908"/>
+            <para PARENT="Default Paragraph Style"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="403.051546391753" YPOS="695.28" WIDTH="252.228453608247" HEIGHT="240" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 252.228 0 252.228 0 252.228 0 252.228 0 252.228 240 252.228 240 252.228 240 252.228 240 0 240 0 240 0 240 0 240 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 252.228 0 252.228 0 252.228 0 252.228 0 252.228 240 252.228 240 252.228 240 252.228 240 0 240 0 240 0 240 0 240 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT CH="Raid levels"/>
+            <ITEXT CH="Partition flags"/>
             <para PARENT="h2"/>
-            <ITEXT CH="Mode"/>
-            <tab/>
-            <ITEXT CH="Disks"/>
-            <tab/>
-            <ITEXT CH="Space"/>
-            <tab/>
-            <ITEXT CH="Features"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="linear"/>
-            <tab/>
-            <ITEXT CH="2+ "/>
-            <tab/>
-            <ITEXT CH="n"/>
-            <tab/>
-            <ITEXT CH="No striping, no parity, no mirroring"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="0"/>
-            <tab/>
-            <ITEXT CH="2+ "/>
-            <tab/>
-            <ITEXT CH="n"/>
-            <tab/>
-            <ITEXT CH="Striping"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="1"/>
-            <tab/>
-            <ITEXT CH="2+ "/>
-            <tab/>
-            <ITEXT CH="n/2"/>
-            <tab/>
-            <ITEXT CH="Mirroring"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="4"/>
-            <tab/>
-            <ITEXT CH="3+ "/>
-            <tab/>
-            <ITEXT CH="n-1"/>
-            <tab/>
-            <ITEXT CH="Striping + Parity on single disk"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="5"/>
-            <tab/>
-            <ITEXT CH="3+ "/>
-            <tab/>
-            <ITEXT CH="n-1"/>
-            <tab/>
-            <ITEXT CH="Striping + Parity distributed"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="6"/>
-            <tab/>
-            <ITEXT CH="4+ "/>
-            <tab/>
-            <ITEXT CH="n-2"/>
-            <tab/>
-            <ITEXT CH="Striping + Parity distributed doubled"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="10"/>
-            <tab/>
-            <ITEXT CH="4/8/+ "/>
-            <tab/>
-            <ITEXT CH="n/2"/>
-            <tab/>
-            <ITEXT CH="Striping + Mirroring"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Command lines"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="For the sake of simplicity, all lines starting with a double dash command in this cheatsheet are to be prefixed with "/>
-            <ITEXT CPARENT="p.code" FONTSIZE="9" CH="mdadm"/>
-            <ITEXT CH=" as follows :"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CPARENT="p.code" CH="--detail --scan "/>
-            <tab CPARENT="p.code"/>
-            <tab CPARENT="p.code"/>
-            <ITEXT CPARENT="p.code" CH="# the example from this page"/>
-            <ITEXT CH="  "/>
-            <para/>
-            <ITEXT CPARENT="p.code" CH="mdadm --detail --scan "/>
-            <tab CPARENT="p.code"/>
-            <ITEXT CPARENT="p.code" CH="# the corresponding command"/>
-            <para/>
-            <ITEXT CH="Files systems types"/>
-            <tab/>
-            <ITEXT CH="MDADM Concepts"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="Linux swap"/>
-            <tab/>
-            <ITEXT CH="82"/>
-            <tab/>
-            <ITEXT CH="Array"/>
-            <ITEXT CPARENT="notes" CH=" "/>
+            <ITEXT CPARENT="notes" CH="Flag "/>
             <tab CPARENT="notes"/>
-            <ITEXT CPARENT="notes" CH="Bunch of disks / devices"/>
-            <para OpticalMargins="0">
-                <Tabs Type="0" Pos="72.28865979" Fill=""/>
-                <Tabs Type="0" Pos="73.21649485" Fill=""/>
-                <Tabs Type="0" Pos="108.1030928" Fill=""/>
-                <Tabs Type="0" Pos="152.6391753" Fill=""/>
-                <Tabs Type="0" Pos="155.6082474" Fill=""/>
-            </para>
-            <ITEXT CH="Linux xfs"/>
-            <tab/>
-            <ITEXT CH="83"/>
-            <tab/>
-            <ITEXT CH="Metadata"/>
-            <ITEXT CPARENT="notes" CH=" "/>
+            <ITEXT CPARENT="notes" CH="For "/>
             <tab CPARENT="notes"/>
-            <ITEXT CPARENT="notes" CH="Array informations"/>
-            <para>
-                <Tabs Type="0" Pos="72.28865979" Fill=""/>
-                <Tabs Type="0" Pos="73.21649485" Fill=""/>
-                <Tabs Type="0" Pos="108.1030928" Fill=""/>
-                <Tabs Type="0" Pos="152.6391753" Fill=""/>
-                <Tabs Type="0" Pos="155.6082474" Fill=""/>
+            <ITEXT CPARENT="notes" CH="Means"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
             </para>
-            <ITEXT CH="Linux ext2-3-4"/>
+            <ITEXT CH="bios_grub "/>
             <tab/>
-            <ITEXT CH="83"/>
-            <tab/>
-            <ITEXT CH="Component "/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Array element "/>
-            <para>
-                <Tabs Type="0" Pos="72.28865979" Fill=""/>
-                <Tabs Type="0" Pos="73.21649485" Fill=""/>
-                <Tabs Type="0" Pos="108.1030928" Fill=""/>
-                <Tabs Type="0" Pos="152.6391753" Fill=""/>
-                <Tabs Type="0" Pos="155.6082474" Fill=""/>
-            </para>
-            <ITEXT CH="Linux LVM"/>
-            <tab/>
-            <ITEXT CH="8E"/>
-            <tab/>
-            <ITEXT CH="Faulty"/>
-            <tab/>
-            <ITEXT CPARENT="notes" CH="Component with errors"/>
+            <ITEXT CPARENT="p.code" CH="GPT"/>
             <ITEXT CH=" "/>
-            <para>
-                <Tabs Type="0" Pos="72.28865979" Fill=""/>
-                <Tabs Type="0" Pos="73.21649485" Fill=""/>
-                <Tabs Type="0" Pos="108.1030928" Fill=""/>
-                <Tabs Type="0" Pos="152.6391753" Fill=""/>
-                <Tabs Type="0" Pos="155.6082474" Fill=""/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="GRUB BIOS partition"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
             </para>
-            <ITEXT CH="Linux Raid Auto.  "/>
+            <ITEXT CH="legacy_boot "/>
             <tab/>
-            <ITEXT CH="FD"/>
+            <ITEXT CPARENT="p.code" CH="GPT"/>
+            <ITEXT CH=" "/>
             <tab/>
-            <ITEXT CH="Missing"/>
+            <ITEXT CPARENT="notes" CH="Partition may be bootable"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="boot "/>
             <tab/>
-            <ITEXT CPARENT="notes" CH="Component placeholder "/>
-            <trail>
-                <Tabs Type="0" Pos="72.28865979" Fill=""/>
-                <Tabs Type="0" Pos="73.21649485" Fill=""/>
-                <Tabs Type="0" Pos="108.1030928" Fill=""/>
-                <Tabs Type="0" Pos="152.6391753" Fill=""/>
-                <Tabs Type="0" Pos="155.6082474" Fill=""/>
-            </trail>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="Partition is bootable"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="lba "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="MS OS should use Linear (LBA) mode"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="hidden "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="Hide partitions from MS OS"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="raid "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Is a software RAID partition"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="LVM "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Is an LVM physical volume"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="PALO "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Is usable by legacy palo"/>
+            <ITEXT CH=" "/>
+            <ITEXT CPARENT="notes" CH="boot loader"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="PREP "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Is usable as legacy PReP boot partition"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="DIAG "/>
+            <tab/>
+            <ITEXT CPARENT="p.code" CH="MBR"/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Is a diagnostics / recovery partition"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="46.30927835" Fill=""/>
+                <Tabs Type="0" Pos="73.03092784" Fill=""/>
+            </para>
+            <ITEXT CH="File Systems "/>
+            <para PARENT="h2"/>
+            <ITEXT CH="Btrfs"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="New generation, featureful"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Crypt/Luks"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Luks encrypted partition"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Ext2"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Legacy Linux filesystem"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Ext3"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="ext2+,  journaling"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Ext4"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="ext3+, 16TB files, 1EB volumes"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="JFS"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Legacy IBM FS"/>
+            <ITEXT CH=" "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="ReiserFS"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Legacy with journaling "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="XFS"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Journaling, RAID optimizations"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Locations of disks as kernel resources"/>
+            <para PARENT="h2"/>
+            <ITEXT CH="/dev/sd*"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="SATA disks"/>
+            <ITEXT CH="  "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="/sys/device/{...}/hostN/scsi_host/hostN "/>
+            <tab/>
+            <para PARENT="Default Paragraph Style"/>
+            <tab/>
+            <tab/>
+            <ITEXT CH="Low level disk interface access"/>
+            <para PARENT="notes"/>
+            <ITEXT CH="/proc/fs/*"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Same as previous by sorted by FS type"/>
+            <para PARENT="Default Paragraph Style"/>
+            <para PARENT="notes"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140" YPOS="947.847010309278" WIDTH="515.28" HEIGHT="492.322989690722" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="12" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 492.323 515.28 492.323 515.28 492.323 515.28 492.323 0 492.323 0 492.323 0 492.323 0 492.323 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 492.323 515.28 492.323 515.28 492.323 515.28 492.323 0 492.323 0 492.323 0 492.323 0 492.323 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT CH="Creating an array crash course"/>
+            <ITEXT CH="New disk crash course"/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="0-2MB"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="empty (used by grub)"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+                <Tabs Type="0" Pos="108.2886598" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="+254MB"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="sda1 "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="ext2"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="/boot"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="+2xRAM"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="sda2 "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="swap-fs"/>
+            <tab CPARENT="p.code"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="+20GB"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="sda3 "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="ext4"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="/"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="+END"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="sda4 "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="ext4"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="/home"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Editing Partition"/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="notes" CH="Name"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="notes" CH="Only "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="notes" CH="Features"/>
+            <para PARENT="notes">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="fdisk"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH=" "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Basic, Can be unsafe"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="cfdisk"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Fdisk family, More visual, Safer"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="sfdisk"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Fdisk family, Can be unsafe"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="parted"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Advanced: edit &amp; rescue"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="gparted"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Same as parted "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="gdisk"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="gpt"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Advanced: edit &amp; rescue "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="cgdisk"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="gpt"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="gdisk for novices "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Auditing &amp; Repairing Partitions"/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="badblocks"/>
+            <ITEXT CPARENT="notes" CH=" "/>
+            <tab CPARENT="notes"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Tests and reports faulty blocks"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="fixparts"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="mbr"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Repairs partition table "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Editing Filesystems "/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="blkid"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Shows the devices Unique Id"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="btrfs"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="btrfs"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Performs all sort of operations: resize, scan, etc."/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="dumpe2fs"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="ext"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Prints status informations"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="e2freefrag"/>
+            <ITEXT CPARENT="notes" CH=" "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="notes" CH="ext"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Shows fragmentation informations"/>
+            <tab/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="e2image"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="ext"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Exports device metadata to a file for later recovery"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="findfs"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Searches local disks by signature (ex: UUID)"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="mkfs"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Creates filesystem"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="tune2fs"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="ext "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Modifies parameters / features / options"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="wipefs"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Erases a file system signature"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Auditing &amp; Repairing Filesystems"/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="btrfsck"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="btrfs"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Examines and repairs btrfs"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="fsck"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Examines and repairs "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="e2fsck"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="ext"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Examines and repairs ext"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="xfs_check "/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="xfs"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Checks xfs"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="xfs_repair"/>
+            <ITEXT CPARENT="notes" CH=" "/>
+            <tab CPARENT="notes"/>
+            <ITEXT CPARENT="notes" CH="xfs"/>
+            <tab CPARENT="notes"/>
+            <ITEXT CH="Reprais xfs"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Multiple devices Filesystems"/>
             <para PARENT="h2"/>
-            <ITEXT CPARENT="notes" CH="# fdisk and create partitions /dev/{sda1,sdb1,sdc1} type 0xfd"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mdadm --zero-superblock /dev/sda /dev/sdb /dev/sdc"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mdadm --create /dev/md0 --metadata 0.9 --level=5 --raid-devices=3 /dev/sd{a,b,c}1 "/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mkfs.ext3 /dev/md0 "/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Creating an array with a missing component"/>
+            <ITEXT CPARENT="p.code" CH="mdadm"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Sets up and manages Software RAID "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="drdb"/>
+            <tab CPARENT="p.code"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Creates devices replicating content over network "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Encrypting Tools"/>
             <para PARENT="h2"/>
-            <ITEXT CH="--create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 missing"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Assembling component from existing array"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="--assemble --scan "/>
-            <ITEXT CPARENT="notes" CH="# system wide assemble"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="--assemble /dev/md0 /dev/sda1 /dev/sdb1 "/>
-            <ITEXT CPARENT="notes" CH="# single array"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Creating an array from an existing disk"/>
+            <ITEXT CPARENT="p.code" CH="cryptsetup"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Performs disk level encryption (dm-crypt or luks) "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Physical data on a disk"/>
             <para PARENT="h2"/>
-            <ITEXT CH="--create /dev/md1 --level=5 --raid-devices=3 missing /dev/sdb2 /dev/sdc2"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mdadm --detail --scan &gt;&gt;/etc/mdadm/mdadm.conf"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="update-initramfs -u"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="dd if=/dev/sda of=/dev/md1"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# replace /dev/sdaX with /dev/md1pX in your boot loader's menu"/>
+            <ITEXT CH="Byte "/>
+            <tab/>
+            <ITEXT CH="8bits"/>
+            <tab/>
+            <ITEXT CH="The basic unit measuring data capacity"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="KiloByte "/>
+            <tab/>
+            <ITEXT CH="1024b"/>
+            <tab/>
+            <ITEXT CH="2^10 bytes (same as Ko)"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Sector "/>
+            <tab/>
+            <ITEXT CH="ex: 512b"/>
+            <tab/>
+            <ITEXT CH="Smallest physical storage unit on a disk"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Block "/>
+            <tab/>
+            <ITEXT CH="ex: 1024b"/>
+            <tab/>
+            <ITEXT CH="A sector or group of sectors"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="You can generally consider the notions of head, cylinder and track as outdated. While shown, they have no meaning."/>
             <para PARENT="notes"/>
-            <ITEXT CH="# reboot into /dev/md1"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="# format /dev/sdaY by marking the partition as autoraid"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="mdadm --add /dev/md1 /dev/sdaY"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# update your boot loader"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="Growing an array by adding components"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="--add /dev/md1 /dev/sdd1 "/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="--grow /dev/md1 --raid-devices=4 "/>
-            <ITEXT CPARENT="notes" CH="# had 3 components before"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Growing an array by adding larger components"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="# same as previous: replace each array component "/>
-            <para PARENT="notes"/>
-            <ITEXT CH="# with new, larger ones and then"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="--grow /dev/md1 --size=max"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# Now you can grow the filesystem of the array"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="Shrinking an array"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="resize2fs /dev/md2 25G"/>
-            <ITEXT CPARENT="notes" CH=" # Resize the array filesystem"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="--grow /dev/md2 --size=31457280 "/>
-            <ITEXT CPARENT="notes" CH="# Resize the array"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# Note that size must be in bytes and multiple of 64"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="resize2fs /dev/md2 "/>
-            <ITEXT CPARENT="notes" CH="# Grow the array filestystem"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Removing &amp; Replacing a component"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="--manage /dev/md0 --fail /dev/sda1 "/>
-            <ITEXT CPARENT="notes" CH="# for valid component"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="--manage /dev/md0 --fail failed "/>
-            <ITEXT CPARENT="notes" CH="# all failed components"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# one liner "/>
-            <para PARENT="notes"/>
-            <ITEXT CH="--fail /dev/md0 /dev/sda1 --remove /dev/md0 /dev/sda1"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="# replace drive, partition it, then"/>
-            <para PARENT="notes"/>
-            <ITEXT CH="--add /dev/md1 /dev/sda1"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Deleting an array"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="--stop /dev/md0 --remove /dev/md0 "/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="--zero-superblock /dev/sd[ab]"/>
-            <para PARENT="p.code"/>
             <para PARENT="p.code"/>
             <breakcol/>
-            <ITEXT CH="Retrieving array(s) informations"/>
+            <ITEXT CH="Bootloading "/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="grub-install"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Deploy grub on disk"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="grub-mkconfig"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="Generates the grub config"/>
+            <tab CPARENT="notes"/>
+            <tab CPARENT="notes"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="LVM2 Tools"/>
             <para PARENT="h2"/>
-            <ITEXT CH="--detail --scan "/>
-            <ITEXT CPARENT="notes" CH="# shows arrays configuration"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="watch cat /proc/mdstat "/>
-            <ITEXT CPARENT="notes" CH="# shows status"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Generating configuration file"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="--detail --scan &gt;&gt; /etc/mdadm/mdadm.conf"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Automounting an array filesystem "/>
-            <para PARENT="h2"/>
-            <ITEXT CH="In /etc/fstab:"/>
+            <ITEXT CH="physical volumes (p) &gt; group (v) &gt; logical volumes (l)"/>
             <para PARENT="notes"/>
-            <ITEXT CH="/dev/md0 /var/lxc ext3 noatime,rw 0 0"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Grub boot for raid 1 arrays"/>
+            <ITEXT CPARENT="p.code" CH="{pv,vg,lv}create"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Creates a new physical / group / logical"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="extend"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="{pv,vg,lv}scan"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Searches for physical / group / logical "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="{pv,vg,lv}display"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Shows informations for physical / group / logical "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="{pv,vg,lv}remove"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Destroys physical / group / logical"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="{pv,lv}resize"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Resized physical / group"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CPARENT="p.code" CH="{pv,vg,lv}s"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Shows info about physical / group / logical"/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Disk physical sectors "/>
             <para PARENT="h2"/>
-            <ITEXT CH="grub"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="grub&gt;device (sd0) /dev/sdb "/>
-            <ITEXT CPARENT="notes" CH="# Safer than sda"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="grub&gt;root (sd0,0) "/>
-            <ITEXT CPARENT="notes" CH="# if root filesystem on sd{a,b}1"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="grub&gt;setup (sd0)"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Spare components"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="--create /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1 --spare-devices=1 /dev/sdc1"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Raid 1 partition duplication"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="sfdisk -d /dev/sda | sfdisk /dev/sdb"/>
-            <para/>
-            <ITEXT CH="Recovering more quickly"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="echo 50000 &gt; /proc/sys/dev/raid/speed_limit_min"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mdadm-startall"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="Utility script for starting all arrays and writing a configuration file if none found"/>
+            <ITEXT CH="MBR"/>
             <para PARENT="notes"/>
-            <ITEXT CH="Bitmaps"/>
-            <para PARENT="h2"/>
-            <ITEXT CH="In some configurations you may not be able to grow the array until you have removed the internal bitmap. You can add the bitmap back again after the array has been grown."/>
+            <ITEXT CPARENT="p.code" CH="0-440 "/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="MBR boot code that is launched by the BIOS."/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="441-512 "/>
+            <ITEXT CH=" "/>
+            <tab/>
+            <ITEXT CH="MBR disk signature."/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="GPT"/>
             <para PARENT="notes"/>
-            <ITEXT CH="mdadm --grow /dev/md1 -b none"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="mdadm --grow /dev/md1 -b internal"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Sources"/>
+            <ITEXT CPARENT="p.code" CH="0-512"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Protective MBR"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="512-1024"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Primary GPT Header"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="1024-17408"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Primary GPT Table "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="17408-33792"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Secondary GPT table"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="-512-END"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Secondary GPT Header"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Grub2"/>
+            <para PARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="0-440"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Stage 1"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="512-2MB"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Stage 1.5 - let free "/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Luks partition"/>
+            <para PARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="0-1024KB"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Luks Header  containing key + salt"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CH="Raid"/>
+            <para PARENT="notes"/>
+            <ITEXT CPARENT="p.code" CH="-4k-end"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Metadata 0.9 (between 64&amp;128 k reserved)"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="256*-end"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Metadata 1.0 (256 + 2b per device)"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="0-256*"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Metadata 1.1 (256 + 2b per device)"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="4k+256*"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Metadata 1.2 (256 + 2b per device)"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <tab/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Partitions, RAID and misaligned Sectors"/>
             <para PARENT="h2"/>
-            <ITEXT CH="https://raid.wiki.kernel.org/"/>
+            <ITEXT CH="Especially for SSD, forcing the disk geometry can be important, except for XFS or MDADM which handle this internally, or the cfdisk command which fixes it for you."/>
+            <para PARENT="notes"/>
             <para/>
-            <ITEXT CH="https://gravyflex.wordpress.com/2012/12/16/mdadm-cheatsheet/"/>
+            <ITEXT CH="http://www.rodsbooks.com/gdisk/cgdisk-walkthrough.html"/>
             <para/>
-            <ITEXT CH="http://www.mysolutions.it/tutorial-mdadm-software-raid-ubuntu-debian-systems/"/>
+            <ITEXT CH="http://en.wikipedia.org/wiki/GUID_Partition_Table"/>
             <para/>
-            <ITEXT CH="http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/"/>
+            <ITEXT CH="http://en.wikipedia.org/wiki/Comparison_of_file_systems"/>
             <para/>
-            <ITEXT CH="https://en.wikipedia.org/wiki/Mdadm"/>
+            <ITEXT CH="http://en.wikipedia.org/wiki/Partition_type"/>
             <para/>
-            <ITEXT CH="https://wiki.debian.org/SoftwareRAID"/>
+            <ITEXT CH="https://wiki.archlinux.org/index.php/GUID_Partition_Table"/>
             <para/>
-            <ITEXT CH="http://www.howtoforge.com/how-to-resize-raid-partitions-shrink-and-grow-software-raid"/>
+            <ITEXT CH="http://en.wikipedia.org/wiki/GNU_GRUB"/>
             <para/>
+            <ITEXT CH="https://en.wikipedia.org/wiki/Cylinder-head-sector"/>
+            <para/>
+            <ITEXT CH="https://en.wikipedia.org/wiki/Grub2#GRUB_version_2_.28GRUB.29"/>
+            <para/>
+            <ITEXT CH="cal"/>
+            <para/>
+            <ITEXT CH="https://wiki.archlinux.org/index.php/dm-crypt_with_LUKS"/>
+            <para/>
+            <ITEXT CH="http://www.linux-mag.com/id/8397/"/>
+            <para/>
+            <ITEXT CH="http://askubuntu.com/questions/8592/how-do-i-align-my-partition-table-properly"/>
+            <para/>
+            <para/>
+            <ITEXT CH="related cheatsheets : mdadm, mounting filesystems"/>
+            <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140" YPOS="670.661443298969" WIDTH="515.28" HEIGHT="24.6185567010309" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 24.6186 515.28 24.6186 515.28 24.6186 515.28 24.6186 0 24.6186 0 24.6186 0 24.6186 0 24.6186 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 24.6186 515.28 24.6186 515.28 24.6186 515.28 24.6186 0 24.6186 0 24.6186 0 24.6186 0 24.6186 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
@@ -666,7 +984,7 @@
             <tab/>
             <ITEXT CPARENT="notes" CH="Journaling, RAID optimizations"/>
             <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Local"/>
+            <ITEXT CH="Locations of disks as kernel resources"/>
             <para PARENT="h2"/>
             <ITEXT CH="/dev/sd*"/>
             <tab/>
@@ -674,9 +992,19 @@
             <ITEXT CPARENT="notes" CH="SATA disks"/>
             <ITEXT CH="  "/>
             <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="/sys/device/{...}/hostN/scsi_host/hostN "/>
+            <tab/>
+            <para PARENT="Default Paragraph Style"/>
+            <tab/>
+            <tab/>
+            <ITEXT CH="Low level disk interface access"/>
+            <para PARENT="notes"/>
             <ITEXT CH="/proc/fs/*"/>
+            <tab/>
+            <tab/>
+            <ITEXT CPARENT="notes" CH="Same as previous by sorted by FS type"/>
             <para PARENT="Default Paragraph Style"/>
-            <para PARENT="Default Paragraph Style"/>
+            <para PARENT="notes"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="140" YPOS="35.3814433" WIDTH="515.28" HEIGHT="24.6185567" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 24.6186 515.28 24.6186 515.28 24.6186 515.28 24.6186 0 24.6186 0 24.6186 0 24.6186 0 24.6186 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 24.6186 515.28 24.6186 515.28 24.6186 515.28 24.6186 0 24.6186 0 24.6186 0 24.6186 0 24.6186 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
@@ -1046,24 +1374,6 @@
             <para PARENT="Default Paragraph Style">
                 <Tabs Type="0" Pos="49.6494845360825" Fill=""/>
             </para>
-            <ITEXT CH="Bootloading "/>
-            <para PARENT="h2">
-                <Tabs Type="0" Pos="49.6494845360825" Fill=""/>
-            </para>
-            <ITEXT CPARENT="p.code" CH="grub-install"/>
-            <tab/>
-            <ITEXT CH="Deploy grub on disk"/>
-            <para PARENT="Default Paragraph Style">
-                <Tabs Type="0" Pos="49.64948454" Fill=""/>
-            </para>
-            <ITEXT CPARENT="p.code" CH="grub-mkconfig"/>
-            <tab/>
-            <ITEXT CH="Generates the grub config"/>
-            <tab CPARENT="p.code"/>
-            <tab/>
-            <para>
-                <Tabs Type="0" Pos="49.6494845360825" Fill=""/>
-            </para>
             <ITEXT CH="Multiple devices Filesystems"/>
             <para PARENT="h2"/>
             <ITEXT CPARENT="p.code" CH="mdadm"/>
@@ -1110,31 +1420,26 @@
             <tab/>
             <ITEXT CH="A sector or group of sectors"/>
             <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Track"/>
-            <tab/>
-            <tab/>
-            <ITEXT CH="A concentrical strip of sectors"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Cylinder"/>
-            <tab/>
-            <tab/>
-            <ITEXT CH="Tracks that are grouped in platters "/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Head"/>
-            <tab/>
-            <tab/>
-            <ITEXT CH="The parts writing on cylinders"/>
-            <para PARENT="Default Paragraph Style"/>
-            <ITEXT CH="Ex: 255  * 31130 * 63 *  512  = 256052966400 bytes"/>
+            <ITEXT CH="You can generally consider the notions of head, cylinder and track as outdated. While shown, they have no meaning."/>
             <para PARENT="notes"/>
-            <ITEXT CH="Disk /dev/sda: 256.1 GB, 256060514304 bytes"/>
             <para PARENT="p.code"/>
-            <ITEXT CH="255 heads, 63 sectors/track, 31130 cylinders, total 500118192 sectors"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="Units = sectors of 1 * 512 = 512 bytes"/>
-            <para PARENT="p.code"/>
-            <ITEXT CH="I/O size (minimum/optimal): 512 bytes / 512 bytes"/>
-            <para PARENT="p.code"/>
+            <breakcol/>
+            <ITEXT CH="Bootloading "/>
+            <para PARENT="h2">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="grub-install"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CH="Deploy grub on disk"/>
+            <para PARENT="Default Paragraph Style">
+                <Tabs Type="0" Pos="49.64948454" Fill=""/>
+            </para>
+            <ITEXT CPARENT="p.code" CH="grub-mkconfig"/>
+            <tab CPARENT="p.code"/>
+            <ITEXT CPARENT="notes" CH="Generates the grub config"/>
+            <tab CPARENT="notes"/>
+            <tab CPARENT="notes"/>
+            <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="LVM2 Tools"/>
             <para PARENT="h2"/>
             <ITEXT CH="physical volumes (p) &gt; group (v) &gt; logical volumes (l)"/>
@@ -1266,11 +1571,8 @@
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="Partitions, RAID and misaligned Sectors"/>
             <para PARENT="h2"/>
-            <ITEXT CH="Especially for SSD, forcing the disk geometry can be important"/>
-            <para/>
-            <para/>
-            <ITEXT CH="Informations http://www.octopuce.fr/cheatsheets/partitions-fs"/>
-            <para/>
+            <ITEXT CH="Especially for SSD, forcing the disk geometry can be important, except for XFS or MDADM which handle this internally, or the cfdisk command which fixes it for you."/>
+            <para PARENT="notes"/>
             <para/>
             <ITEXT CH="http://www.rodsbooks.com/gdisk/cgdisk-walkthrough.html"/>
             <para/>
@@ -1283,7 +1585,6 @@
             <ITEXT CH="https://wiki.archlinux.org/index.php/GUID_Partition_Table"/>
             <para/>
             <ITEXT CH="http://en.wikipedia.org/wiki/GNU_GRUB"/>
-            <para/>
             <para/>
             <ITEXT CH="https://en.wikipedia.org/wiki/Cylinder-head-sector"/>
             <para/>
@@ -1316,9 +1617,12 @@
             <trail PARENT="h1" ALIGN="2"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="183.34020619" YPOS="584.6768254" WIDTH="471.9397938" HEIGHT="8.741428571" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 471.94 0 471.94 0 471.94 0 471.94 0 471.94 8.74143 471.94 8.74143 471.94 8.74143 471.94 8.74143 0 8.74143 0 8.74143 0 8.74143 0 8.74143 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 471.94 0 471.94 0 471.94 0 471.94 0 471.94 8.74143 471.94 8.74143 471.94 8.74143 471.94 8.74143 0 8.74143 0 8.74143 0 8.74143 0 8.74143 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT CH="Original document available on http://github.com/octopuce/cheatsheet-partitions-fs     Public domain "/>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="183.34020619" YPOS="575.28" WIDTH="471.9397938" HEIGHT="18.138253971" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 471.94 0 471.94 0 471.94 0 471.94 0 471.94 18.1383 471.94 18.1383 471.94 18.1383 471.94 18.1383 0 18.1383 0 18.1383 0 18.1383 0 18.1383 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 471.94 0 471.94 0 471.94 0 471.94 0 471.94 18.1383 471.94 18.1383 471.94 18.1383 471.94 18.1383 0 18.1383 0 18.1383 0 18.1383 0 18.1383 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Original document available on http://github.com/octopuce/cheatsheet-partitions-fs     CreativeCommons 4.0 BY-SA"/>
             <para PARENT="notes"/>
+            <ITEXT CH="Download the PDF on http://www.octopuce.fr/cheatsheets/partitions-fs"/>
+            <para PARENT="notes"/>
+            <para/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="140" YPOS="575.28" WIDTH="30.43298969" HEIGHT="18.13825397" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.142210232196262" LOCALSCY="0.142210232196262" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="images/octopuce.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 30.433 0 30.433 0 30.433 0 30.433 0 30.433 18.1383 30.433 18.1383 30.433 18.1383 30.433 18.1383 0 18.1383 0 18.1383 0 18.1383 0 18.1383 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 30.433 0 30.433 0 30.433 0 30.433 0 30.433 18.1383 30.433 18.1383 30.433 18.1383 30.433 18.1383 0 18.1383 0 18.1383 0 18.1383 0 18.1383 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
