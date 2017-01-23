@@ -600,7 +600,7 @@
             <para PARENT="Default Paragraph Style">
                 <Tabs Type="0" Pos="49.64948454" Fill=""/>
             </para>
-            <ITEXT CPARENT="p.code" CH="drdb"/>
+            <ITEXT CPARENT="p.code" CH="drbd"/>
             <tab CPARENT="p.code"/>
             <tab CPARENT="p.code"/>
             <ITEXT CH="Creates devices replicating content over network "/>
@@ -1383,7 +1383,7 @@
             <para PARENT="Default Paragraph Style">
                 <Tabs Type="0" Pos="49.64948454" Fill=""/>
             </para>
-            <ITEXT CPARENT="p.code" CH="drdb"/>
+            <ITEXT CPARENT="p.code" CH="drbd"/>
             <tab CPARENT="p.code"/>
             <tab/>
             <ITEXT CH="Creates devices replicating content over network "/>
