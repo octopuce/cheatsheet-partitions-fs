@@ -621,19 +621,19 @@
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="KiloByte "/>
             <tab/>
-            <ITEXT CH="1024b"/>
+            <ITEXT CH="1024B"/>
             <tab/>
-            <ITEXT CH="2^10 bytes (same as Ko)"/>
+            <ITEXT CH="2^10 bytes (same as KB)"/>
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="Sector "/>
             <tab/>
-            <ITEXT CH="ex: 512b"/>
+            <ITEXT CH="ex: 512B"/>
             <tab/>
             <ITEXT CH="Smallest physical storage unit on a disk"/>
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="Block "/>
             <tab/>
-            <ITEXT CH="ex: 1024b"/>
+            <ITEXT CH="ex: 1024B"/>
             <tab/>
             <ITEXT CH="A sector or group of sectors"/>
             <para PARENT="Default Paragraph Style"/>
@@ -1404,19 +1404,19 @@
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="KiloByte "/>
             <tab/>
-            <ITEXT CH="1024b"/>
+            <ITEXT CH="1024B"/>
             <tab/>
-            <ITEXT CH="2^10 bytes (same as Ko)"/>
+            <ITEXT CH="2^10 bytes (same as KB)"/>
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="Sector "/>
             <tab/>
-            <ITEXT CH="ex: 512b"/>
+            <ITEXT CH="ex: 512B"/>
             <tab/>
             <ITEXT CH="Smallest physical storage unit on a disk"/>
             <para PARENT="Default Paragraph Style"/>
             <ITEXT CH="Block "/>
             <tab/>
-            <ITEXT CH="ex: 1024b"/>
+            <ITEXT CH="ex: 1024B"/>
             <tab/>
             <ITEXT CH="A sector or group of sectors"/>
             <para PARENT="Default Paragraph Style"/>
